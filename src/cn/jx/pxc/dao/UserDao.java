@@ -16,14 +16,14 @@ import cn.jx.pxc.entity.User;
 public interface UserDao {
 	/**
 	 * 添加用户
-	 * @param user 需要添加的实体类用户实体类
+	 * @param user 需要添加的用户实体类
 	 * @return  添加的实体类用户实体类
 	 */
 	User addUser(User user);
 	
 	/**
 	 * 查询用户
-	 * @param user 需要查询的实体类用户实体类
+	 * @param user 需要查询的用户实体类
 	 * @return 查询的实体类用户实体类或者为空
 	 */
 	User findUser(User user);
