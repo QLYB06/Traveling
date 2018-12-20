@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <!DOCTYPE struts PUBLIC
+  "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+  "http://struts.apache.org/dtds/struts-2.3.dtd">
+  
+  <struts>
+     <constant name="struts.i18n.encoding" value="UTF-8" />
+      <package name="testspring" namespace="/" extends="struts-default">
+          <!-- <interceptors>
+      		<interceptor  name="privilege" class="cn.itcast.interceptor.PrivilegeInterceptor"/> 
+  	  		<interceptor-stack name="myStack">
+  	  			<interceptor-ref name="defaultStack"/>
+  	  			<interceptor-ref name="privilege"/>
+  	  		</interceptor-stack> 
+ 		</interceptors> -->
+ 		<action name="user_*" class="UserAction" method="{1}">
+ 		  <result name="SUCCESS">/index.jsp</result>
+ 		  <result name="input">/index.jsp</result>
+ 		  <result name="register">/login.jsp</result>
+ 		<allowed-methods>login,register</allowed-methods>
+ 		</action>
+ 		  
+      
+      </package>
+         
+  
+  </struts>
+ 
