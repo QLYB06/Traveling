@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import cn.jx.pxc.Exception.MyException;
 import cn.jx.pxc.dao.UserDao;
 import cn.jx.pxc.entity.User;
 import cn.jx.pxc.service.UserService;
@@ -28,14 +29,26 @@ public class UserServiceImpl implements UserService{
 	}
 
 	
-	public User login(User user) throws Exception {
+	public User login(User user) throws MyException {
 		
-		return userDao.findUser(user);
+		
+		try {
+			return userDao.findUser(user);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+			return user;
+		}
 	}
 
 	
-	public void register(User user) throws Exception {
-		userDao.addUser(user);
+	public void register(User user) throws MyException {
+		try {
+			userDao.addUser(user);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+		}
 		
 	}
 	

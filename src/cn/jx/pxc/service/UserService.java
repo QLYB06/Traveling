@@ -3,6 +3,7 @@
  */
 package cn.jx.pxc.service;
 
+import cn.jx.pxc.Exception.MyException;
 import cn.jx.pxc.entity.User;
 
 /** *<p>Title: UserService.java</p> 
@@ -18,7 +19,8 @@ public interface UserService {
 	 * @return 查询的实体类用户实体类或者为空
 	 * @throws Exception
 	 */
-	User login(User user) throws Exception; 
+	
+	User login(User user) throws MyException; 
 	
 	/**
 	 * 调用dao添加用户方法
@@ -26,6 +28,6 @@ public interface UserService {
 	 * @return  null
 	 * @throws Exception
 	 */
-	void register(User user) throws Exception;
+	void register(User user) throws MyException;
 	
 }
