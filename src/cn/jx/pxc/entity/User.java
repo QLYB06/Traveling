@@ -3,15 +3,17 @@
  */
 package cn.jx.pxc.entity;
 
+import java.io.Serializable;
+
 /**
  *<p>Title: UserInfo.java</p>
- *<p>Description: 描述</p>
+ *<p>Description: 用户实体类创建</p>
  * @package  cn.jx.pxc.entity
  * @author   孙立鑫
  * @date     2018年12月5日下午12:57:22
  * @version 18.12.05
  */
-public class User{
+public class User implements Serializable{
 
 	private Integer id;
 	private String username;
