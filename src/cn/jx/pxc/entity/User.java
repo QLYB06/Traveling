@@ -10,8 +10,8 @@ import java.io.Serializable;
  *<p>Description: 用户实体类创建</p>
  * @package  cn.jx.pxc.entity
  * @author   孙立鑫
- * @date     2018年12月5日下午12:57:22
- * @version 18.12.05
+ * @date     2019年1月18日下午20:29
+ * @version 19.1.18
  */
 public class User implements Serializable{
 

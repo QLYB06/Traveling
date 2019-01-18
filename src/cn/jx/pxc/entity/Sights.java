@@ -9,7 +9,7 @@ import java.util.Date;
  *<p>Description: 景点实体类创建</p>
  * @package  cn.jx.pxc.entity
  * @author   孙立鑫
- * @date     2019年1月18日下午19:46
+ * @date     2019年1月18日下午20.30
  * @version 19.1.18
  */
 public class Sights implements Serializable{
